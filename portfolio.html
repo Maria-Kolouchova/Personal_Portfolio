@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio · Maria Kolouchova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Maria Kolouchova</div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page-portfolio">
+    <section class="portfolio-header">
+      <h1>My Projects</h1>
+    </section>
+
+    <section class="portfolio-grid">
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-category">Public Health</span>
+          <h2>ADHD Screening in Adults</h2>
+        </div>
+        <p class="project-description">
+          Exploratory analysis of self-reported symptoms and screening outcomes in an adult cohort.
+        </p>
+        <p class="project-tools">
+          <strong>Tools:</strong> Python, Pandas, Matplotlib
+        </p>
+        <div class="project-actions">
+          <a href="files/adhd-screening-report.pdf" class="btn btn-primary" download>
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a>
+          <a href="projects/adhd-screening.html" class="btn btn-secondary">
+            <i class="fas fa-globe"></i> View Web Version
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-category">Social Impact</span>
+          <h2>NGO Donation Analysis</h2>
+        </div>
+        <p class="project-description">
+          Investigating donation trends and giving patterns across social impact organizations.
+        </p>
+        <p class="project-tools">
+          <strong>Tools:</strong> Python, NumPy, SQL
+        </p>
+        <div class="project-actions">
+          <a href="files/ngo-donation-analysis.pdf" class="btn btn-primary" download>
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a>
+          <a href="projects/ngo-donation-analysis.html" class="btn btn-secondary">
+            <i class="fas fa-globe"></i> View Web Version
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-category">Exploratory Analysis</span>
+          <h2>Greenhouse Gas Emissions</h2>
+        </div>
+        <p class="project-description">
+          Exploratory analysis of global greenhouse gas emissions data over time and by region.
+        </p>
+        <p class="project-tools">
+          <strong>Tools:</strong> Python, Plotly, Pandas
+        </p>
+        <div class="project-actions">
+          <a href="files/ghg-emissions-report.pdf" class="btn btn-primary" download>
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a>
+          <a href="projects/ghg-emissions.html" class="btn btn-secondary">
+            <i class="fas fa-globe"></i> View Web Version
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Maria Kolouchova · Data Analyst &amp; Researcher
+  </footer>
+
+  <script src="js/modal.js"></script>
+</body>
+</html>
