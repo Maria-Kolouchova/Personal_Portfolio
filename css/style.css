@@ -431,6 +431,15 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+  /* Soft round border for badges */
+.cert-item img[src*="IBM-small"],
+.cert-item img[src*="pcap-small"] {
+  border-radius: 50%;
+  border: 3px solid rgba(75, 184, 200, 0.35); /* jemný teal rámček */
+  padding: 6px; /* aby rámček nebol nalepený na obrázku */
+  background: rgba(255, 255, 255, 0.6); /* jemné svetlé pozadie */
+}
+
 
   .page {
     margin-top: 1.5rem;
