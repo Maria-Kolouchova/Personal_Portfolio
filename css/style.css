@@ -357,6 +357,10 @@ body {
   z-index: 2000;
 }
 
+.modal.open {
+  display: flex;
+}
+
 .modal-content {
   position: relative;
   max-width: 90vw;
@@ -370,7 +374,9 @@ body {
 .modal-content img {
   width: 100%;
   height: auto;
-  display: block;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .modal-close {
@@ -382,6 +388,15 @@ body {
   font-size: 1.2rem;
   color: var(--bg-deep);
   cursor: pointer;
+}
+
+/* Soft round border for badges */
+.cert-item img[src*="IBM-small"],
+.cert-item img[src*="pcap-small"] {
+  border-radius: 50%;
+  border: 3px solid rgba(75, 184, 200, 0.35);
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 /* Responsive */
@@ -431,15 +446,6 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-  /* Soft round border for badges */
-.cert-item img[src*="IBM-small"],
-.cert-item img[src*="pcap-small"] {
-  border-radius: 50%;
-  border: 3px solid rgba(75, 184, 200, 0.35); /* jemný teal rámček */
-  padding: 6px; /* aby rámček nebol nalepený na obrázku */
-  background: rgba(255, 255, 255, 0.6); /* jemné svetlé pozadie */
-}
-
 
   .page {
     margin-top: 1.5rem;
