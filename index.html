@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maria Kolouchova · Data Analyst & Researcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/J6N8z+7dYh6kCkN5pWl5F5l5F5l5F5l5F5l5F5l5F5l5F5l5F5l5F5l5F5l5F5"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Maria Kolouchova</div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page-about">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-photo">
+          <!-- Replace with your own photo later -->
+          <img src="assets/img/profile-placeholder.jpg" alt="Photo of Maria Kolouchova" />
+        </div>
+      </div>
+      <div class="hero-right">
+        <h1>About Me</h1>
+        <p class="hero-intro">
+          Hello, I'm <span class="highlight">Maria Kolouchova</span><br />
+          <span class="hero-subtitle">Data Analyst &amp; Researcher</span>
+        </p>
+        <p>
+          I am a data analyst with a <strong>Master’s in Education</strong>. I moved into data analysis
+          to follow my long-standing interest in science and research. My work is driven by a desire
+          to contribute to the <strong>health, environment and social impact</strong> fields, where data
+          can genuinely make a difference.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-grid">
+      <div class="card">
+        <h2>My Background</h2>
+        <ul>
+          <li>Master’s in Education</li>
+          <li>Statistics with Python</li>
+          <li>PCAP – Python Certification</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>My Approach</h2>
+        <ul>
+          <li>Data-Driven Analysis</li>
+          <li>Rigorous &amp; Reliable</li>
+          <li>Clear Insights</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>My Interests</h2>
+        <ul>
+          <li>Social Impact &amp; NGOs</li>
+          <li>Health &amp; Research</li>
+          <li>Neurodiversity Exploration</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Skills &amp; Tools</h2>
+        <p>
+          Python · Statistics · Pandas · NumPy · Data Visualization · SQL · Research
+        </p>
+      </div>
+    </section>
+
+    <section class="certificates-section">
+      <h2>Certificates</h2>
+      <p class="cert-note">Click a certificate to view it larger.</p>
+
+      <div class="cert-grid">
+        <div class="cert-item" data-cert="cert1">
+          <img src="assets/img/cert-statistics-thumb.jpg" alt="Statistics Certificate" />
+          <span>Statistics with Python</span>
+        </div>
+        <div class="cert-item" data-cert="cert2">
+          <img src="assets/img/cert-pcap-thumb.jpg" alt="PCAP Python Certificate" />
+          <span>PCAP – Python Certification</span>
+        </div>
+        <div class="cert-item" data-cert="cert3">
+          <img src="assets/img/cert-masters-thumb.jpg" alt="Master’s Degree Certificate" />
+          <span>Master’s Degree</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Maria Kolouchova · Data Analyst &amp; Researcher
+  </footer>
+
+  <!-- Certificate Modals -->
+  <div class="modal" id="modal-cert1">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="assets/img/cert-statistics-full.jpg" alt="Statistics Certificate full view" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-cert2">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="assets/img/cert-pcap-full.jpg" alt="PCAP Python Certificate full view" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-cert3">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="assets/img/cert-masters-full.jpg" alt="Master’s Degree Certificate full view" />
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+</body>
+</html>
