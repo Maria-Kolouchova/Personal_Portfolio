@@ -105,6 +105,12 @@ body {
   gap: 2rem;
   align-items: center;
   margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: center;
 }
 
 /* Circular photo frame */
@@ -119,6 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid var(--bg-blue);
 }
 
 .photo-frame img {
@@ -127,6 +134,11 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.hero-text {
+  text-align: center;
+}
+
 
 .hero-text h1 {
   margin-top: 0;
