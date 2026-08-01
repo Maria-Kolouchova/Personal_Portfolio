@@ -187,7 +187,7 @@ body {
 }
 
 .cert-item {
-  height: 10vh;
+  height: 15vh;
   overflow: hidden;
   display: flex;
   align-items: center;
