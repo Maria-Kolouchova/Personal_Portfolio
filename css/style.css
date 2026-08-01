@@ -6,7 +6,6 @@
   --text-main: #1f2933;
   --text-muted: #5f6c80;
   --white: #ffffff;
-  --card-bg: rgba(255, 255, 255, 0.9);
   --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.08);
   --radius: 12px;
 }
@@ -26,7 +25,7 @@ body {
   min-height: 100vh;
 }
 
-/* Fullscreen background image */
+/* Background waves */
 body {
   background-image: url("../assets/img/background-waves.png");
   background-size: cover;
@@ -34,7 +33,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Sticky header */
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -84,12 +83,6 @@ body {
   color: var(--white);
 }
 
-.nav-icons a {
-  color: var(--bg-deep);
-  margin-left: 0.75rem;
-  font-size: 1.1rem;
-}
-
 .nav-toggle {
   display: none;
   background: none;
@@ -105,30 +98,37 @@ body {
   padding: 0 1.5rem;
 }
 
-/* Hero section (About) */
+/* HERO SECTION */
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
   gap: 2rem;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-.hero-left,
-.hero-right {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-}
-
-.hero-photo img {
+/* Circular photo frame */
+.photo-frame {
   width: 100%;
-  border-radius: var(--radius);
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.hero-right h1 {
+.hero-text h1 {
   margin-top: 0;
   margin-bottom: 0.75rem;
 }
@@ -147,27 +147,59 @@ body {
   font-weight: 600;
 }
 
-/* About grid */
-.about-grid {
+/* ABOUT 3 COLUMNS */
+.about-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.about-grid .card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-}
-
-.about-grid h2 {
+.about-col h2 {
   margin-top: 0;
   margin-bottom: 0.75rem;
+  color: var(--bg-deep);
 }
 
-/* Certificates */
+.about-col ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+/* SKILLS SECTION */
+.skills-section {
+  margin-bottom: 3rem;
+}
+
+.skills-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--bg-deep);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* CERTIFICATES */
 .certificates-section {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -200,147 +232,29 @@ body {
   object-fit: cover;
 }
 
-.cert-item span {
+.badge-link {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.9rem;
-}
-
-/* Portfolio */
-.page-portfolio .portfolio-header {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-
-.project-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-category {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--bg-deep);
-}
-
-.project-meta h2 {
-  margin: 0.25rem 0 0.75rem;
-}
-
-.project-description {
-  margin-bottom: 0.75rem;
-}
-
-.project-tools {
-  margin-bottom: 1rem;
-  color: var(--text-muted);
-}
-
-.project-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-/* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.5rem 0.9rem;
-  border-radius: 999px;
+  color: var(--text-main);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: none;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: color 0.2s;
 }
 
-.btn-primary {
-  background: var(--bg-deep);
-  color: var(--white);
-}
-
-.btn-primary:hover {
-  background: #16385a;
-  box-shadow: var(--shadow-soft);
-}
-
-.btn-secondary {
-  background: rgba(75, 184, 200, 0.15);
+.badge-link:hover {
   color: var(--bg-deep);
 }
 
-.btn-secondary:hover {
-  background: rgba(75, 184, 200, 0.3);
+/* Round badge borders */
+.cert-item img[src*="IBM-small"],
+.cert-item img[src*="pcap-small"] {
+  border-radius: 50%;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
-/* Contact */
-.page-contact .contact-header {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-
-.contact-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.contact-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  background: rgba(75, 184, 200, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--bg-deep);
-}
-
-.contact-content h2 {
-  margin: 0 0 0.25rem;
-}
-
-.contact-content p {
-  margin: 0;
-}
-
-.contact-content a {
-  color: var(--bg-deep);
-  text-decoration: none;
-}
-
-/* Footer */
+/* FOOTER */
 .site-footer {
   text-align: center;
   padding: 1.5rem;
@@ -349,7 +263,7 @@ body {
   background: rgba(247, 251, 255, 0.9);
 }
 
-/* Modals */
+/* MODALS */
 .modal {
   position: fixed;
   inset: 0;
@@ -372,12 +286,16 @@ body {
   border-radius: var(--radius);
   padding: 1rem;
   box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
   height: auto;
-  max-height: 85vh;
   object-fit: contain;
   border-radius: 8px;
 }
@@ -393,29 +311,26 @@ body {
   cursor: pointer;
 }
 
-/* Soft round border for badges */
-.cert-item img[src*="IBM-small"],
-.cert-item img[src*="pcap-small"] {
-  border-radius: 50%; 
-  padding: 6px;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .about-grid {
+  .photo-frame {
+    margin: 0 auto;
+  }
+
+  .about-columns {
     grid-template-columns: 1fr;
   }
 
-  .portfolio-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
-  .contact-grid {
+  .cert-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -441,59 +356,7 @@ body {
     display: flex;
   }
 
-  .portfolio-grid {
+  .cert-grid {
     grid-template-columns: 1fr;
   }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .page {
-    margin-top: 1.5rem;
-  }
-}
-/* Fix large modal images overflowing */
-.modal-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content img {
-  max-width: 100%;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-}
-/* Make badge text look clickable */
-.badge-link {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--bg-deep);
-  text-decoration: none;
-  transition: color 0.2s, text-decoration 0.2s;
-  cursor: pointer;
-}
-/* Badge text styled like normal text, but clickable */
-.badge-link {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--text-main); /* normálna farba textu */
-  text-decoration: none;   /* odstráni podčiarknutie */
-  cursor: pointer;         /* ukáže ruku pri hover */
-  transition: color 0.2s, text-decoration 0.2s;
-}
-
-.badge-link:hover {
-  color: var(--bg-deep);   /* jemné zvýraznenie */
-  text-decoration: underline; /* voliteľné – môžeš odstrániť */
-}
-
-.badge-link:hover {
-  color: var(--bg-deep);
 }
