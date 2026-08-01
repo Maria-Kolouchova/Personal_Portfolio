@@ -396,8 +396,7 @@ body {
 /* Soft round border for badges */
 .cert-item img[src*="IBM-small"],
 .cert-item img[src*="pcap-small"] {
-  border-radius: 50%;
-  border: 3px solid rgba(75, 184, 200, 0.35);
+  border-radius: 50%; 
   padding: 6px;
   background: rgba(255, 255, 255, 0.6);
 }
