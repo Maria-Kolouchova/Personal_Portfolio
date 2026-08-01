@@ -187,14 +187,17 @@ body {
 }
 
 .cert-item {
-  text-align: center;
-  cursor: pointer;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cert-item img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
 .cert-item span {
