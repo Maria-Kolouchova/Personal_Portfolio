@@ -194,6 +194,9 @@ body {
   color: var(--bg-deep);
 }
 
+.about-col {
+  text-align: left;}
+
 .about-col ul {
   margin: 0;
   padding-left: 1.2rem;
