@@ -187,7 +187,7 @@ body {
 }
 
 .cert-item {
-  height: 30vh;
+  height: 20vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -477,6 +477,21 @@ body {
   text-decoration: none;
   transition: color 0.2s, text-decoration 0.2s;
   cursor: pointer;
+}
+/* Badge text styled like normal text, but clickable */
+.badge-link {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-main); /* normálna farba textu */
+  text-decoration: none;   /* odstráni podčiarknutie */
+  cursor: pointer;         /* ukáže ruku pri hover */
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.badge-link:hover {
+  color: var(--bg-deep);   /* jemné zvýraznenie */
+  text-decoration: underline; /* voliteľné – môžeš odstrániť */
 }
 
 .badge-link:hover {
