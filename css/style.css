@@ -468,3 +468,18 @@ body {
   object-fit: contain;
   border-radius: 8px;
 }
+/* Make badge text look clickable */
+.badge-link {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--bg-deep);
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+  cursor: pointer;
+}
+
+.badge-link:hover {
+  color: var(--bg-teal);
+  text-decoration: underline;
+}
