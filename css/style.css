@@ -154,7 +154,6 @@ body {
 .hero-text {
   text-align: center;
   line-height: 1.7;
-  padding-right: 0.75rem;
 }
 
 
@@ -184,6 +183,7 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .about-col h2 {
@@ -206,11 +206,12 @@ body {
 .skills-section h2 {
   margin-bottom: 1.5rem;
   color: var(--bg-deep);
+  text-align: center;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 2rem;
 }
 
@@ -219,8 +220,8 @@ body {
 }
 
 .skill-item img {
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
@@ -236,6 +237,10 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   padding: 1.5rem;
+}
+
+.certificates-section h2 {
+  text-align: center;
 }
 
 .cert-note {
