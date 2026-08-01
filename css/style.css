@@ -106,6 +106,7 @@ body {
   align-items: center;
   margin-bottom: 3rem;
   justify-content: center;
+  position: relative;
 }
 
 .hero::after {
@@ -139,7 +140,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--bg-blue);
+  border: 1px solid rgb(154,205,50);
 }
 
 .photo-frame img {
@@ -151,12 +152,14 @@ body {
 
 .hero-text {
   text-align: center;
+  line-height: 1.7;
 }
 
 
 .hero-text h1 {
   margin-top: 0;
   margin-bottom: 0.75rem;
+  color: var(--bg-deep);
 }
 
 .hero-intro {
@@ -170,7 +173,7 @@ body {
 
 .highlight {
   color: var(--bg-deep);
-  font-weight: 800;
+  font-weight: 750;
 }
 
 /* ABOUT 3 COLUMNS */
