@@ -19,20 +19,31 @@
 
 <header class="site-header">
   <div class="nav">
-    <div class="logo">Maria Kolouchova</div>
-
     <ul class="nav-links">
-      <li><a href="index.html">About</a></li>
+      <li><a href="index.html" class="active">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <div class="nav-icons">
+      <a href="https://www.linkedin.com/in/maria-kolouchova" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:hello@example.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
   </div>
 </header>
 
 <main class="page page-about">
 
   <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- HERO SECTION -->
+<section class="hero">
+
+  <!-- TOP: photo + short text -->
+  <div class="hero-top">
     <div class="hero-photo">
       <div class="photo-frame">
         <img src="assets/img/Profile_photo.png" alt="Photo of Maria Kolouchova" />
@@ -40,19 +51,29 @@
     </div>
 
     <div class="hero-text">
-      <h1>About Me</h1>
-      <p class="hero-intro">
-        Hello, I'm <span class="highlight">Maria Kolouchova</span><br />
-        <span class="hero-subtitle">Data Analyst &amp; Researcher</span>
-      </p>
-      <p>
-        I am a data analyst with a <strong>Master’s in Education</strong>. I moved into data analysis
-        to follow my long-standing interest in science and research. My work is driven by a desire
-        to contribute to the <strong>health, environment and social impact</strong> fields, where data
-        can genuinely make a difference.
-      </p>
+      <div class="hero-text-inner">
+        <h1>About Me</h1>
+
+        <p class="hero-intro">
+          Hello, I'm <span class="highlight">Maria Kolouchova</span></p>
+        <p class="hero-subtitle">Data Analyst &amp; Researcher</p>
+      </div>
     </div>
-  </section>
+  </div>
+
+
+  <!-- BOTTOM: long paragraph moved under the horizontal line -->
+  <div class="hero-bottom">
+    <p>
+      I am a data analyst with a <strong>Master’s in Education</strong>. I moved into data analysis
+      to follow my long-standing interest in science and research. My work is driven by a desire
+      to contribute to the <strong>health, environment and social impact</strong> fields, where data
+      can genuinely make a difference.
+    </p>
+  </div>
+
+</section>
+
 
   <!-- ABOUT 3 COLUMNS -->
   <section class="about-columns">
@@ -126,13 +147,12 @@
   <!-- CERTIFICATES -->
   <section class="certificates-section">
     <h2>Certificates</h2>
-    <p class="cert-note">Click a certificate to view it larger.</p>
 
     <div class="cert-grid">
 
       <div class="cert-item" data-cert="cert1">
         <img src="assets/img/statistics_with_python-small.jpg" alt="Statistics with Python Certificate" />
-        <span>Statistics with Python</span>
+        <p>Statistics with Python</p>
       </div>
 
       <div class="cert-item" data-cert="cert2">
